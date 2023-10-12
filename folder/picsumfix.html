@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/Imgallery.png">
+    <title>Lorem Picsum Project</title>
+    <link rel="stylesheet" href="picsum.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- <link rel="stylesheet" href="./preloader.css"> -->
+</head>
+<body class="overflow-x-hidden text-slate-700 dark">
+
+    <div class="preloade">
+        <div class="loader"></div>
+        <div class="loaderbg"></div>
+    </div>
+    
+    <nav id="navi" class="navi w-full  h-16 px-5 lg:px-14  shadow-l overflow-hidden flex justify-between items-center sticky top-0 z-50 backdrop-blur-md bg-white bg-opacity-30 ">
+        <div class="w-32 flex items-center">
+            <div><img src="assets/Imgallery.png" alt="#"></div>
+            <div class="whitespace-nowrap font-bold  logo text-slate-200">PIC SUMN</div>
+        </div>
+        <div class="flex items-center">
+            <div class="border-2 rounded-md mr-2 md:flex items-center hidden">
+                <input type="text" placeholder="Find your favourite photos..." class="mx-1 text-slate-500 w-56 px-3 py-1 focus:outline-none">
+                <button id="searchicon" class="invert border-l-2 w-10"><img class="m-auto w-6 p-1" src="assets/search.png" alt=""></button>
+            </div>
+            <button id="darkmode" class="invert w-6 mx-2"><div><img src="assets/day.png" alt=""></div></button>
+            <button id="ham" class="w-6 mx-2"><div><img src="assets/hamburger.png" alt=""></div></button>
+        </div>
+    </nav>
+
+    <div class="fixed bottom-12 right-6 z-50">
+        <a href="#" class="">
+            <div class="bg-white border-2  rounded-md invert w-12 p-4 overflow-hidden">
+                <img class="" src="./assets/uparrow.png" alt="">
+            </div>
+        </a>
+    </div>
+
+    <section class="search z-50 pt-3 fixed w-full px-6 bottom-2 md:hidden">
+        <div class="border-2  backdrop-blur-lg bg-white rounded-md max-w-xs m-auto flex justify-center  items-center ">
+            <input type="text" placeholder="Find your favourite photos..." class="mx-1 text-slate-500 w-56 px-3 py-1 focus:outline-none">
+            <button class="border-l-2 w-10 "><img class="w-6 m-auto p-1" src="assets/search.png" alt=""></button>
+        </div>
+    </section>
+
+    <section id="top" class="md:px-10 px-4 pt-2 md:text-xl  ">
+        <div class="md:flex items-baseline">
+            <div class="pr-2">Explore all your favorite photo collections right here,at <strong class="text-base">PIC SUMN</strong> </div>
+        </div>
+        <div class="text-base md:block hidden">From Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, dignissimos!</div>
+    </section>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero pt-7 md:flex px-1 sm:block ">
+        <section class="hero-image md:w-2/5 md:h-[35rem] h-96 bg-green-5 border md:m-3 hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 ease-in-out">
+            <div class="selection h-12 bg-black bg-opacity-50 pt-2 pl-5 text-2xl font-semibold text-slate-100 flex ">Today's <div class="ml-2 text-green-400">Pick</div></div>
+            <div></div>
+            <div class="text-sm md:text-base h-24 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                <div class="stretch">
+                    <div class="flex ">Photo by:<div class="mx-1 font-semibold">Joshua Stutggart</div>on Unsplash.com </div>
+                </div>
+                <div class="flex"><div class="font-semibold">Categories:</div> <div class="mx-1 ">Oceanography,Nature,Wildlife</div></div>
+                <div class="flex"><div class="font-semibold">Likes:</div> <div class="mx-1 ">212</div></div>
+            </div>
+        </section> 
+        <section class="md:w-3/5 h-[35rem] md:flex sm:block">
+            
+            <section class="md:w-3/5 sm:w-full">
+                <section class="w-full">
+                    <section class="hero-image h-[17.3rem] bg-green-5 border md:m-3 my-3 hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 ease-in-out">
+                        <div class="selection h-12 bg-black bg-opacity-50 pt-2 pl-5 text-2xl font-semibold text-slate-100 flex ">Nature</div>
+                        <div></div>
+                        <div class="card-description h-12 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                            <div>Nature</div>
+                        </div>
+                    </section>
+                </section>
+                <section class="w-full">
+                    <section class="flex w-full">
+                        <section class="hero-image w-1/2 md:h-[17rem] h-52 bg-green-5 border md:mx-3 hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 ease-in-out">
+                            <div class="selection h-12 bg-black bg-opacity-50 pt-2 pl-5 text-2xl font-semibold text-slate-100 flex ">Scenic</div>
+                            <div></div>
+                            <div class="card-description h-12 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                                <div>Scenic</div>
+                            </div>
+                        </section>
+                        <section class="hero-image w-1/2 md:h-[17rem] h-52 bg-green-5 border md:mx-3 hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 ease-in-out">
+                            <div class="selection h-12 bg-black bg-opacity-50 pt-2 pl-5 text-2xl font-semibold text-slate-100 flex ">Technology</div>
+                            <div></div>
+                            <div class="card-description h-12 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                                <div>Technology</div>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section class="hero-image md:w-2/5 md:h-[35rem] h-60 bg-green-5 border m-3 hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 ease-in-out">
+                <div class="selection h-12 bg-black bg-opacity-50 pt-2 pl-5 text-2xl font-semibold text-slate-100 flex ">Artistic</div>
+                <div></div>
+                <div class="card-description h-12 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                    <div>Artistic</div>
+                </div>
+            </section>
+        </section>
+        
+    </section>
+    <!-- End of hero section -->
+    
+    <section class=" pt-12 group h-[80rem]">
+    
+        <section class=" md:pt-12 pt-40 group h-[80rem]">
+            <section>
+                <div class="gotyou md:text-2xl font-bold text-gray-800 flex dark"><div class="border-t-4 border-green-800 px-4 md:px-9 group-hover:px-16 group-hover:border-red-600 transition-all duration-200 py-3 ">WE GOT YOU COVERED!</div></div>
+                <div class="max-w-screen-lg md:pl-12 pl-4"><div class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, praesentium dolorem! Excepturi itaque velit cupiditate a officia expedita eos, tempora ex aperiam dolor obcaecati nemo fugiat ullam, incidunt quia libero!</div></div>
+            </section>
+    
+            <section class="md:px-12 px-3 md:pt-10 pt-2"> 
+                <div>
+                    <div class="flex text-lg font-semibold">
+                        <div class="mr-1">Daily Picks for</div>
+                        <div class="text-green-500">YOU</div>
+                    </div>
+                    <div id="here">Not sure of what you're looking for? Worry no more. Browse through some of our selections from Photographers all over the world.</div>
+                </div>
+            </section>
+
+            <section class="picks md:px-12 pl-3 pt-12 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+
+                    <!-- ITEMS GROUP -->
+                <div class="items-group mr-2">
+
+                    <!-- Item -->
+                    <section class="select-card w- h- bg-green-5 border mr-3 hover:shadow-lg transform hover:scale-[1.01] transition-all duration-200 ease-in-out">
+                        <div class="select-info h-16 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                            <div class="flex justify-between">
+
+                                <button class="heartbutton">
+                                    <section class=" bg-slate-300 p-3 rounded-xl">
+                                        <div class="heart"><img class="w-5 h-5" src="./assets/heart.png" alt="up"></div>
+                                    </section>
+                                </button>
+                                <button class="download" onclick="downloader(event)">
+                                    <section class=" bg-slate-300 p-3 rounded-xl ">
+                                        <div class="download"><img class="w-5 h-5" src="./assets/download.png" alt="up"></div>
+                                    </section>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Item -->
+                    <section class="select-card w- h- bg-green-5 border mr-3 hover:shadow-lg transform hover:scale-[1.01] transition-all duration-200 ease-in-out">
+                        <div class="select-info h-16 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                            <div class="flex justify-between">
+
+                                <button class="heartbutton">
+                                    <section class=" bg-slate-300 p-3 rounded-xl">
+                                        <div class="heart"><img class="w-5 h-5" src="./assets/heart.png" alt="up"></div>
+                                    </section>
+                                </button>
+                                <button class="download" onclick="downloader(event)">
+                                    <section class=" bg-slate-300 p-3 rounded-xl ">
+                                        <div class="download"><img class="w-5 h-5" src="./assets/download.png" alt="up"></div>
+                                    </section>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                    <!-- ITEMS GROUP -->
+                <div class="items-group mr-2">
+
+                    <!-- Item -->
+                    <section class="select-card w- h- bg-green-5 border mr-3 hover:shadow-lg transform hover:scale-[1.01] transition-all duration-200 ease-in-out">
+                        <div class="select-info h-16 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                            <div class="flex justify-between">
+
+                                <button class="heartbutton">
+                                    <section class=" bg-slate-300 p-3 rounded-xl">
+                                        <div class="heart"><img class="w-5 h-5" src="./assets/heart.png" alt="up"></div>
+                                    </section>
+                                </button>
+                                <button class="download" onclick="downloader(event)">
+                                    <section class=" bg-slate-300 p-3 rounded-xl ">
+                                        <div class="download"><img class="w-5 h-5" src="./assets/download.png" alt="up"></div>
+                                    </section>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Item -->
+                    <section class="select-card w- h- bg-green-5 border mr-3 hover:shadow-lg transform hover:scale-[1.01] transition-all duration-200 ease-in-out">
+                        <div class="select-info h-16 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                            <div class="flex justify-between">
+
+                                <button class="heartbutton">
+                                    <section class=" bg-slate-300 p-3 rounded-xl">
+                                        <div class="heart"><img class="w-5 h-5" src="./assets/heart.png" alt="up"></div>
+                                    </section>
+                                </button>
+                                <button class="download" onclick="downloader(event)">
+                                    <section class=" bg-slate-300 p-3 rounded-xl ">
+                                        <div class="download"><img class="w-5 h-5" src="./assets/download.png" alt="up"></div>
+                                    </section>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                    <!-- ITEMS GROUP -->
+                <div class="items-group mr-2">
+
+                    <!-- Item -->
+                    <section class="select-card w- h- bg-green-5 border mr-3 hover:shadow-lg transform hover:scale-[1.01] transition-all duration-200 ease-in-out">
+                        <div class="select-info h-16 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                            <div class="flex justify-between">
+
+                                <button class="heartbutton">
+                                    <section class=" bg-slate-300 p-3 rounded-xl">
+                                        <div class="heart"><img class="w-5 h-5" src="./assets/heart.png" alt="up"></div>
+                                    </section>
+                                </button>
+                                <button class="download" onclick="downloader(event)">
+                                    <section class=" bg-slate-300 p-3 rounded-xl ">
+                                        <div class="download"><img class="w-5 h-5" src="./assets/download.png" alt="up"></div>
+                                    </section>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Item -->
+                    <section class="select-card w- h- bg-green-5 border mr-3 hover:shadow-lg transform hover:scale-[1.01] transition-all duration-200 ease-in-out">
+                        <div class="select-info h-16 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                            <div class="flex justify-between">
+
+                                <button class="heartbutton">
+                                    <section class=" bg-slate-300 p-3 rounded-xl">
+                                        <div class="heart"><img class="w-5 h-5" src="./assets/heart.png" alt="up"></div>
+                                    </section>
+                                </button>
+                                <button class="download" onclick="downloader(event)">
+                                    <section class=" bg-slate-300 p-3 rounded-xl ">
+                                        <div class="download"><img class="w-5 h-5" src="./assets/download.png" alt="up"></div>
+                                    </section>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                    <!-- ITEMS GROUP -->
+                <div class="items-group mr-2">
+
+                    <!-- Item -->
+                    <section class="select-card w- h- bg-green-5 border mr-3 hover:shadow-lg transform hover:scale-[1.01] transition-all duration-200 ease-in-out">
+                        <div class="select-info h-16 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                            <div class="flex justify-between">
+
+                                <button class="heartbutton">
+                                    <section class=" bg-slate-300 p-3 rounded-xl">
+                                        <div class="heart"><img class="w-5 h-5" src="./assets/heart.png" alt="up"></div>
+                                    </section>
+                                </button>
+                                <button class="download" onclick="downloader(event)">
+                                    <section class=" bg-slate-300 p-3 rounded-xl ">
+                                        <div class="download"><img class="w-5 h-5" src="./assets/download.png" alt="up"></div>
+                                    </section>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Item -->
+                    <section class="select-card w- h- bg-green-5 border mr-3 hover:shadow-lg transform hover:scale-[1.01] transition-all duration-200 ease-in-out">
+                        <div class="select-info h-16 pt-3 text-slate-100 bg-black bg-opacity-50 absolute bottom-0 w-full px-4">
+                            <div class="flex justify-between">
+
+                                <button class="heartbutton">
+                                    <section class=" bg-slate-300 p-3 rounded-xl">
+                                        <div class="heart"><img class="w-5 h-5" src="./assets/heart.png" alt="up"></div>
+                                    </section>
+                                </button>
+                                <button class="download" onclick="downloader(event)">
+                                    <section class=" bg-slate-300 p-3 rounded-xl ">
+                                        <div class="download"><img class="w-5 h-5" src="./assets/download.png" alt="up"></div>
+                                    </section>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+        
+                <!-- Last two item groups -->
+            </section>
+
+            <section class="pt-8">
+                <div class="flex justify-center ">
+                    <button id="more" class="px-6 py-1 bg-white border-2 border-black text-black rounded-sm hover:text-white hover:bg-black font-semibold text-sm flex transition-all duration-100 ease-linear">
+                            <div>SHOW MORE</div>
+                            <div class="ml-3 rotate-90">></div>
+                    </button>
+                </div>
+            </section>
+    
+            <section class="reach-out mt-12 ">
+                <div class=" text-white bg-green-800 bg-opacity-80 py-12 flex justify-center">
+                    <div class="px-3">
+                        <div class="text-xl text-center">Want to reach out?</div>
+                        <div class="text-center">Send a message to us and get a response via email</div>
+                        <div class="px-3 py-3 mt-6 md:w-[40rem] sm:w-[80vw] border rounded-md bg-green-950">
+                            <form action="#">
+                                <div>
+                                    <label for="message">Your message</label>
+                                </div>
+                                <div>
+                                    <input type="text" class="mt-2 p-4 text-black h-40 w-full flex focus:outline-none ">
+                                </div>
+                                <button id="sendsms" type="#" class="mt-8 border px-4 py-1 bg-white text-green-800 font-semibold rounded-md">
+                                    <div>Send</div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="py-16">
+                <div class="flex justify-center text-green-800 font-bold ">
+                    <div>
+                        <div class="text-center text-3xl">PIC SUMN</div>
+                        <div class="text-center text-lg">There's always something,for everyone </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section>
+                <footer class="bg-black text-slate-300 ">
+                    <div class="w-[70%] m-auto pt-16 pb-32 ">
+                        <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 w-full ">
+                            <div class="mb-4">
+                                <div class="font-semibold text-xl">Social</div>
+                                <div class="text-slate-400">
+                                    <ul>
+                                        <a href="#" class="hover:text-slate-300 transition-colors duration-300 ease-linear"><li>Facebook</li></a>
+                                        <a href="#" class="hover:text-slate-300 transition-colors duration-300 ease-linear"><li>Instagram</li></a>
+                                        <a href="#" class="hover:text-slate-300 transition-colors duration-300 ease-linear"><li>Twitter</li></a>
+                                        <a href="#" class="hover:text-slate-300 transition-colors duration-300 ease-linear"><li>Github</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <div class="mb-4">
+                                <div class="font-semibold text-xl">Partners</div>
+                                <div class="text-slate-400">
+                                    <ul>
+                                        <a href="#" class="hover:text-slate-300 transition-colors duration-300 ease-linear"><li>Unsplash</li></a>
+                                        <a href="#" class="hover:text-slate-300 transition-colors duration-300 ease-linear"><li>Lorem Picsum</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <div class="mb-4">
+                                <div class="font-semibold text-xl">My other portfolio projects</div>
+                                <div class="text-slate-400">
+                                    <ul>
+                                        <a href="#" class="hover:text-slate-300 transition-colors duration-300 ease-linear"><li>Main portfolio</li></a>
+                                        <a href="#" class="hover:text-slate-300 transition-colors duration-300 ease-linear"><li>Chidstal Healthcare</li></a>
+                                        <a href="#" class="hover:text-slate-300 transition-colors duration-300 ease-linear"><li>More are on the way...</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <section class="bg-black flex justify-center text-slate-300 pb-16">
+                        <div>
+                            <div class="text-center">PIC SUMN</div>
+                            <div> &copy; OG CEE 2023</div>
+                        </div>
+                    </section>
+                </footer>
+            </section>
+        
+    </section>
+    <script src="../jquery.js"></script>
+    <script src="picsumfix.js"></script>
+
+    <!-- <script src="picsum.js"></script> -->
+    <!-- <script>
+        const sms = document.getElementById('sendsms');
+        sms.addEventListener('click',(e)=>{
+            // console.log(e.type);
+            event.preventDefault();
+        })
+    </script> -->
+</body>
+</html> 

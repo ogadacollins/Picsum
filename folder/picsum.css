@@ -1,0 +1,63 @@
+/* 
+input[type="text"]:focus{
+    border: none !important;
+} */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.hero-image{
+    /* background: url("/src/assets/images/3846906.jpg"); */
+    /* background: url("/src/assets/images/hakon-sataoen-XFiY4FZj8ZE-unsplash.jpg"); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.card-description{
+    /* height: 3rem !important; */
+}
+.select-card{
+    margin-bottom: 15px;
+    /* background-image: url('/src/assets/images/pexels-pixabay-206359.jpg'); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:768px) {
+    .select-card{
+        height: 14rem;
+    }
+}
+@media screen and (min-width:768px) {
+    .select-card{
+        height: 20rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .select-card{
+        height: 24rem;
+    }
+}
+.reach-out{
+    background-image: url('/src/assets/images/5227167.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+footer ul li {
+    padding: 8px 0px;
+}
+.stretch{
+    white-space: nowrap;
+}
+.dark{
+    background: black;
+    color:rgb(205, 204, 204) !important;
+}
+.heartbutton:focus section{
+    background-color: rgb(255, 89, 89);
+}
+.download:focus section{
+    background-color: rgb(106, 226, 120);
+}
